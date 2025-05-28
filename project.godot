@@ -1,0 +1,28 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="surface-nets"
+run/main_scene="uid://cvy4svi6hbg1t"
+config/features=PackedStringArray("4.4", "Forward Plus")
+config/icon="res://icon.svg"
+
+[debug_draw_3d]
+
+settings/addon_root_folder="res://addons/debug_draw_3d"
+
+[dotnet]
+
+project/assembly_name="surface-nets"
+
+[editor]
+
+movie_writer/movie_file="/Users/dihydromonoxide/Projects/GodotProjects/surface-nets/videos/movie.avi"
