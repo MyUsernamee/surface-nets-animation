@@ -4,6 +4,7 @@
 
 [sub_resource type="Environment" id="Environment_dhfec"]
 background_mode = 1
+background_color = Color(0.197937, 0.197937, 0.197937, 1)
 ambient_light_color = Color(1, 1, 1, 1)
 
 [node name="2DVisuals" type="Node2D" node_paths=PackedStringArray("camera")]
