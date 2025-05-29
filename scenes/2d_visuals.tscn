@@ -1,3 +1,20 @@
-[gd_scene format=3 uid="uid://cvy4svi6hbg1t"]
+[gd_scene load_steps=3 format=3 uid="uid://cvy4svi6hbg1t"]
 
-[node name="2DVisuals" type="Node2D"]
+[ext_resource type="Script" uid="uid://bfvh52kl2dw3n" path="res://scripts/animation.gd" id="1_dhfec"]
+
+[sub_resource type="Environment" id="Environment_dhfec"]
+background_mode = 1
+ambient_light_color = Color(1, 1, 1, 1)
+
+[node name="2DVisuals" type="Node2D" node_paths=PackedStringArray("camera")]
+script = ExtResource("1_dhfec")
+camera = NodePath("Camera3D")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
+projection = 1
+current = true
+size = 4.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_dhfec")
