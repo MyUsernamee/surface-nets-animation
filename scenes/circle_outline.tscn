@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://byv66k1awj1kh"]
+
+[ext_resource type="Texture2D" uid="uid://cxqisrcpvxuvk" path="res://aa_circle_outline.png" id="1_jcsxy"]
+
+[node name="CircleOutline" type="Sprite3D"]
+modulate = Color(1, 1, 1, 0)
+pixel_size = 0.0039
+texture = ExtResource("1_jcsxy")
